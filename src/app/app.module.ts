@@ -3,6 +3,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "@angular/material";
 import { NgModule } from '@angular/core';
 
+import { StatesModule } from "./states/states.module";
+
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
@@ -16,7 +18,8 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    StatesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
