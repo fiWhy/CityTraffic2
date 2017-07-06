@@ -1,11 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <md-toolbar>
-    <app-top-bar [leftSideNavId]="leftSideNavId"></app-top-bar>
-  </md-toolbar>
-  <div class="wrapper">
-    <div class="layout-padding" id="content">
+  <app-top-bar [leftSideNavId]="leftSideNavId"></app-top-bar>
+  <md-grid-list class="wrapper" cols="1">
+    <md-grid-tile colspan="1" id="content">
       Hello!
-    </div>
-  </div>
+    </md-grid-tile>
+  </md-grid-list>
 </div>
