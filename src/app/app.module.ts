@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "@angular/material";
 import { NgModule } from '@angular/core';
+import { NguiMapModule } from '@ngui/map';
+
+import { GoogleMapsConfig } from "./config/googlemaps.config";
 
 import { StatesModule } from "./states/states.module";
 
@@ -19,6 +22,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     BrowserModule,
     MaterialModule,
     BrowserAnimationsModule,
+    NguiMapModule.forRoot({ apiUrl: `https://maps.google.com/maps/api/js?key=${GoogleMapsConfig.API_KEY}&libraries=${GoogleMapsConfig.LIBRARIES.join(",")}` }),
     StatesModule
   ],
   providers: [],
